@@ -11,7 +11,7 @@ function rotateVariantFunc(rotatorVariants) {
         if (rotatorVariant.classList.contains("rotator__case_active")) {
           const currentVariant = Array.from(rotatorVariants).findIndex(element => element.classList.contains("rotator__case_active"));
           let nextVariant = currentVariant + 1;
-          if (nextVariant > rotatorVariants.length) {
+          if (nextVariant >= rotatorVariants.length) {
             nextVariant = 0;
               }
               rotatorVariant.classList.remove("rotator__case_active");
